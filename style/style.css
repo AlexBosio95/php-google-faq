@@ -1,3 +1,10 @@
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
 .intestation{
     display: flex;
 }
@@ -51,4 +58,25 @@ header nav ul li{
     margin-right: 2rem ;
     font-size: .9rem;
     color: gray;
+}
+
+.ms_container{
+    padding: 14rem 13rem 2rem 13rem;
+}
+
+main{
+    overflow: auto;
+}
+
+main h1{
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+main p{
+    font-size: 0.9rem;
+}
+
+main a{
+    text-decoration: none;
 }
