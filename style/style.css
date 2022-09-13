@@ -1,8 +1,10 @@
+
 header{
     position: fixed;
     z-index: 1;
     width: 100%;
     background-color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .intestation{
@@ -11,7 +13,7 @@ header{
 
 .intestation .logo{
     width: 85%;
-    padding: 1.5rem;
+    padding: 1.2rem 0 1rem 1.2rem;
 }
 
 .intestation .logo img{
@@ -51,21 +53,44 @@ header nav{
 
 header nav ul{
     list-style: none;
+    padding-left: 1.2rem;
+    margin-bottom: .5rem;
 }
 
 header nav ul li{
     display: inline-block;
-    margin-right: 2rem ;
+    margin-right: 2.5rem ;
     font-size: .9rem;
     color: gray;
+    cursor: pointer;
+    position: relative;
 }
 
-.ms_container{
-    padding: 14rem 13rem 2rem 13rem;
+header nav ul li:last-child{
+    color: #3367D6;
+}
+
+header nav ul li:last-child::after{
+    content: '';
+    position: absolute;
+    bottom: -0.65rem;
+    left: 0;
+    height: .2rem;
+    width: 100%;
+    background-color: #3367D6;
+}
+
+header hr{
+    margin: 0;
+}
+
+.my_container{
+    padding: 12rem 14rem 2rem 14rem;
 }
 
 main{
     overflow: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main h1{
@@ -74,9 +99,36 @@ main h1{
 }
 
 main p{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
 }
 
 main a{
     text-decoration: none;
+}
+
+main .paragraf{
+    padding-bottom: 4rem;
+}
+
+footer{
+    background-color: #F5F5F5;
+}
+
+footer .ms_container{
+    padding: 1rem 12rem;
+}
+
+footer ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-right: 1.5rem ;
+    font-size: .7rem;
+    color: rgb(79, 79, 79);
+    cursor: pointer;
+    opacity: .7;
 }
